@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1053140963724",
+    "project_id": "ethiopay-9d221",
+    "storage_bucket": "ethiopay-9d221.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053140963724:android:57a9f452c529714b28c6a9",
+        "android_client_info": {
+          "package_name": "com.example.ethiopay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYaH7wEx8cNS8ZRan-Xyr_9Oz5UxOHqk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
