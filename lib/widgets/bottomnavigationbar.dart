@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ethiopay/Screens/add.dart';
 import 'package:ethiopay/Screens/home.dart';
 import 'package:ethiopay/Screens/statistics.dart';
-
+import 'package:ethiopay/Screens/home_screen.dart';
 class Bottom extends StatefulWidget {
   const Bottom({Key? key}) : super(key: key);
 
@@ -12,21 +12,21 @@ class Bottom extends StatefulWidget {
 
 class _BottomState extends State<Bottom> {
   int index_color = 0;
-  List Screen = [Home(), Statistics(), Home(), Statistics()];
+  List Screen = [Home(), Statistics(),HomeScreen(),Home()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Screen[index_color],
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => Add_Screen()));
-        },
-        child: Icon(Icons.add),
-        backgroundColor:Color(0xFFFD641D),
-        
-
-      ),
+      floatingActionButton: ClipOval(
+  child: FloatingActionButton(
+    onPressed: () {
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => Add_Screen()));
+    },
+    child: Icon(Icons.add),
+    backgroundColor: Color(0xFFFD641D),
+  ),
+),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),
@@ -67,7 +67,7 @@ class _BottomState extends State<Bottom> {
                   });
                 },
                 child: Icon(
-                  Icons.account_balance_wallet_outlined,
+                  Icons.payments_sharp,
                   size: 30,
                   color: index_color == 2 ? Color(0xFFFD641D) : Colors.grey,
                 ),
