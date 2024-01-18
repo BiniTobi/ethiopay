@@ -35,6 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Bill Payment'),
+        backgroundColor: Color(0xFFFD641D),
       ),
       body: ListView.builder(
         itemCount: bills.length,

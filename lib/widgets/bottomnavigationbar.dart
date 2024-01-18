@@ -3,6 +3,7 @@ import 'package:ethiopay/Screens/add.dart';
 import 'package:ethiopay/Screens/home.dart';
 import 'package:ethiopay/Screens/statistics.dart';
 import 'package:ethiopay/Screens/home_screen.dart';
+import 'package:ethiopay/Screens/profile_screen.dart';
 class Bottom extends StatefulWidget {
   const Bottom({Key? key}) : super(key: key);
 
@@ -12,7 +13,7 @@ class Bottom extends StatefulWidget {
 
 class _BottomState extends State<Bottom> {
   int index_color = 0;
-  List Screen = [Home(), Statistics(),HomeScreen(),Home()];
+  List Screen = [Home(), Statistics(),HomeScreen(),ProfileApp()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
