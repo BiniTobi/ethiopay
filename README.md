@@ -1,1 +1,1 @@
-![Add a heading (2)](https://github.com/BiniTobi/ethiopay/assets/98336375/59516ac5-634b-4497-aa69-d761baf7c229)
+![Add a heading (3)](https://github.com/BiniTobi/ethiopay/assets/98336375/5b0133b9-aa0f-493a-a752-8315c5a8377b)
